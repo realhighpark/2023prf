@@ -42,6 +42,7 @@ span::selection{
     display:flex;
     align-items:center;
     padding:0;
+    position:relative;
 }
 .gnb ul li{
     font-size:15px;
@@ -50,22 +51,31 @@ span::selection{
     padding: 8px 20px;
     margin: 0px 20px;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 .gnb ul li:hover{
-    color:#C9B8ED;
+    color:#fff;
+    font-weight: 500;
+    filter: drop-shadow(0 0 12px #fff);
     transform:scale(1.02);
 }
 .gnb .logo{
     background:url(../image/Logo-outline.png);
     width: 45px;
     height: 30px;
+    margin: 0px 40px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    /* position:absolute; */
+    /* left:50px; */
+    /* top:50%; */
+    /* transform: translate(0, -50%); */
     transition: all 0.4s ease-in-out;
 }
 .gnb .logo:hover{
-    background:url(../image/Logo.png);
+    background:url(../image/Logo-black.png);
+    filter: drop-shadow(0 0 8px #fff);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
