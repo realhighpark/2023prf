@@ -205,11 +205,13 @@ span::selection{
     width:960px;
     height:620px;
     margin:auto;
-    transition: all 0.6s ease-in-out;
+    position:relative;
 }
 .c-content{
-    width:300vw;
+    width:300%;
     height:100%;
+    position:absolute;
+    transition: all 0.6s ease-in-out;
 }
 .c-inner{
     width: 960px;
@@ -503,13 +505,19 @@ footer{
         margin: 0 20px 0 0;
     }
     .c-carousel{
-        width:900px;
+        width:100%;
         margin:72px auto 0 auto;
     }
     .carousel-area .c-text{
         width:900px;
     }
     .c-box-cover{
+        width:900px;
+    }
+    .c-content{
+        width:300%;
+    }
+    .c-inner{
         width:900px;
     }
     .c-inner-g{
@@ -637,11 +645,12 @@ footer{
         margin: 0 20px 0 0;
     }
     .c-carousel{
-        width:460px;
+        width:100vw;
         height:400px;
         margin:0 auto 0 auto;
     }
     .c-box-cover{
+        width:460px;
         height:400px;
     }
     .carousel-area .c-text{
@@ -650,10 +659,7 @@ footer{
     }
     .c-content{
         display:flex;
-        width:1380px;
-    }
-    .c-box-cover{
-        width:460px;
+        width:300%;
     }
     .c-inner{
         padding-top:60px;
@@ -825,6 +831,7 @@ footer{
     }
     .c-box-cover{
         height:400px;
+        width:100%;
     }
     .carousel-area .c-text{
         width:100vw;
@@ -833,14 +840,11 @@ footer{
     }
     .c-content{
         display:flex;
-        width:1380px;
-    }
-    .c-box-cover{
-        width:100vw;
+        width:300%;
     }
     .c-inner{
         padding-top:60px;
-        width:100vw;
+        width:100%;
         height:auto;
         display:flex;
         justify-content: flex-start;
